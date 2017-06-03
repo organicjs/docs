@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>OrganicJS - MVC Framework for Web/API Developement.</title>
+			<link rel="stylesheet" href="css/vendor/bricks.css">
+			<link rel="stylesheet" href="css/vendor/ionicons/ionicons.min.css">
+			<link rel="stylesheet" href="css/custom.css">
+		</head>
+		<body>
+			<header class="">
+				<div class="top-nav">
+					<div class="wrapper row">
+						<div class="col m4">
+							<span class="logo">OrganicJS</span>
+						</div>
+						<div class="col m8 txt-right">
+							<a href="">Docs</a>
+							<span class="spacer">&nbsp;</span>
+							<a href="https://github.com/organicjs"><i class="ion-social-github"></i></a>
+						</div>
+					</div>
+				</div>
+				
+				<div id="hero-msg">
+					<div class="row">
+						<div class="col m12 l8">
+							<h1>
+								<i class="ion-leaf"></i>
+								OrganicJS
+							</h1>
+							<h5>Structured MVC Framework On Top Of ExpressJS For Rapid Web/API Development.</h5>
+						</div>
+						<div class="col m12 l4">
+							<div class="terminal">
+								$ npm install -g organicjs<br>
+								$ organic new myApp<br>
+								$ cd myApp<br>
+								$ nmp install<br>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			
+			<div class="landing-content">
+				<div class="content-head">
+					<h2>Give Structure & Little Sugar to Your ExpressJS Apps</h2>
+					
+					<p>
+						OrganicJS aims to provides a thin layer of abstraction on top of ExpressJS without hampering
+						your productivity.
+					</p>
+				</div>
+			</div>
+			
+			
+			
+			<!-- DEMONSTRATION -->
+			<div class="wrapper landing-content overview">
+				<div class="row">
+					<div class="col m12 l6 content">
+						<h2>Slim Routes</h2>				
+						<span class="terminal">
+							<span class="circle"></span>
+							<span class="circle"></span>
+							<span class="circle"></span>
+						</span>					
+<pre></code>module.exports.routes = {
+    'get /': 'HelloController@greet',
+    'get /shout': 'HelloController@shout'
+};</code></pre>
+					</div>
+					
+					<div class="col m12 l6 content">
+						<h2>Easy Middlewares</h2>
+						<span class="terminal">
+							<span class="circle"></span>
+							<span class="circle"></span>
+							<span class="circle"></span>
+						</span>					
+<pre></code>bundler.use(function(req, res, next) {
+    console.log('Dummy middleware.');
+    next();
+});</code></pre>
+
+					</div>
+					
+					<div class="col m12 l6 content">
+						<h2>Beautiful Controllers</h2>
+						<span class="terminal">
+							<span class="circle"></span>
+							<span class="circle"></span>
+							<span class="circle"></span>
+						</span>					
+<pre></code>module.exports.sayHello = function(req, res) {
+    res.send('Hello World');	
+};</code></pre>
+					</div>
+					
+					<div class="col m12 l6 content">
+						<h2>Modular Architecture</h2>
+						<span class="terminal">
+							<span class="circle"></span>
+							<span class="circle"></span>
+							<span class="circle"></span>
+						</span>					
+<pre></code>myApp
+|-- controllers
+|-- models
+|-- views
+|-- routes.js
+|-- middlewares.js</code></pre>
+					</div>
+					
+				</div>
+			</div>
+			<!-- /DEMONSTATION -->
+			
+			
+			
+			<footer>
+				OrganicJS | &copy; <a href="https://github.com/pradeep-tiwari">Pradeep Tiwari</a>
+			</footer>
+			
+			
+			
+			
+		</body>
+	</html>
+	

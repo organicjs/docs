@@ -1,0 +1,172 @@
+.top-nav {
+	padding: 1rem;
+    background: #f8f8fa;
+	font-size: 1.4rem;
+}
+.logo {
+	font-weight: 700;
+}
+.top-nav a {
+	color: #000;
+}
+.top-nav .spacer {
+	display: inline-block;
+	width: 3rem;
+}
+#hero-msg {
+	text-align: center;
+	padding: 15rem 1.5rem;
+    background: #009688;
+    color: #fff;
+	text-shadow: 2px 2px 10px black;
+	/*background: linear-gradient(to bottom,#3F51B5,#464e77 100%);*/
+	background: linear-gradient(to bottom, #4CAF50, #009688 100%);
+}
+#hero-msg h5 {
+	color: #86ff86;
+}
+#hero-msg .terminal {
+	text-align: left;
+    padding: 0.8rem 1.5rem;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: #000;
+    color: #3fad3f;
+    font-family: monospace;
+}
+
+/* --------------------------------------------- */
+
+.overview .terminal {
+	padding-left: 1rem;
+}
+.overview .terminal .circle {
+	display: inline-block;
+	height: 0.7rem;
+	width: 0.7rem;
+	border-radius: 50%;
+	background: #fff;
+}	
+.overview pre {
+	margin-bottom: 2.5rem;
+    background: #009688;
+    color: #fff;
+    font-size: 1.4rem;
+    font-family: monospace;
+    padding: 1.5rem;
+    height: 160px;
+	border-top: 15px solid #ccc;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+	position: relative;
+	top: -2.8rem;
+	z-index: -999;
+}
+
+/* --------------------------------------------- */
+.wrapper.overview {
+	max-width: 900px;
+	margin: 0 auto;
+}
+.landing-content .content-head {
+	text-align: center;
+	padding: 8rem 1.5rem;
+	background: #f8f8f1;
+	margin-bottom: 5rem;
+}
+.landing-content .content-head h2 {
+	font-size: 2.4rem;
+	color: #009688;
+}
+.landing-content .content-head p {
+	max-width: 62%;
+	margin: auto auto;
+}
+.landing-content .content {
+	padding: 3rem 1.5rem;
+}
+.landing-content .content h2 {
+	font-size: 2.4rem;
+}
+.landing-content .content p {
+	text-align: justify;
+	font-size: 1.8rem;
+	font-weight: 100;
+	background: #f8f8fa;
+	padding: 1.5rem;
+}
+
+/* --------------------------------------------- */
+.docs.top-nav {
+	background: #009688;
+	color: #fff;
+}
+.docs.top-nav a {
+	color: #fff;
+}
+.docs-container {
+	padding-top: 8rem;
+	padding-bottom: 3rem;
+}
+.docs-navigation {
+	max-width: 80%;
+	padding: 1.5rem 1.5rem;
+	padding-bottom: 0.5rem;
+}
+.docs-navigation ul {
+	list-style: none;
+	margin-bottom: 0;
+}
+.docs-navigation h5 {
+	font-weight: 700;
+	font-size: 1.4rem;
+}
+.docs-navigation ul li a {
+	color: green;
+	font-weight: 100;
+	font-size: 1.4rem;
+}
+.docs-content h1 {
+	font-size: 2.8rem;
+	color: #009688;
+	border-bottom: 1px solid #ccc;
+}
+.docs-content .content h2 {
+	margin-top: 5rem;
+	font-size: 2rem;
+	font-weight: 400;
+}
+.docs-content .content {
+	font-weight: 100;
+}
+.docs-content .content pre code {
+	background-color: #000000;
+    color: #fff;
+    font-size: 1.4rem;
+    font-family: monospace;
+}
+.docs-content .content .toc {
+	border: 1px solid #dbdfe1;
+    padding: 20px 20px 30px 20px;
+    margin: 10px 0 40px 0;
+    display: inline-block;
+}
+.docs-content .content .toc ul {
+	list-style: none;
+	margin-bottom: 0;
+}
+.docs-content .content .toc ul li {
+	margin-bottom: 0;
+}
+.code-span {
+	color: crimson;
+    background-color: #f1f1f1;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 110%;
+}
+
+/* Better styles for embedding GitHub Gists */
+.gist .blob-wrapper td {
+	border: 0 !important;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>Middlewares - OrganicJS Documentation</title>
+			<link rel="stylesheet" href="../css/vendor/bricks.css">
+			<link rel="stylesheet" href="../css/vendor/ionicons/ionicons.min.css">
+			<link rel="stylesheet" href="../css/custom.css">
+		</head>
+		<body>
+			<header class="">
+				<div class="docs top-nav">
+					<div class="wrapper row">
+						<div class="col m4">
+							<span class="logo">
+								<i class="ion-leaf"></i>
+								OrganicJS
+							</span>
+						</div>
+						<div class="col m8 txt-right">
+							<a href="">Tutorials</a>
+							<span class="spacer">&nbsp;</span>
+							<a href="https://github.com/organicjs"><i class="ion-social-github"></i></a>
+						</div>
+					</div>
+				</div>	
+			</header>
+			
+			<div class="docs-container wrapper row">
+				<div class="col m12 l3">
+					<div class="docs-navigation">
+						<h5>Reference</h5>
+					
+						<ul>
+							<li><a href="index.html">Introduction</a></li>
+							<li><a href="installation.html">Installation</a></li>
+							<li><a href="scaffolding.html">Scaffolding</a></li>
+							<li><a href="app-structure.html">App Structure</a></li>
+							<li><a href="routing.html">Routes</a></li>
+							<li><a href="controllers.html">Controllers</a></li>
+							<li><a href="middlewares.html">Middlewares</a></li>
+							<li><a href="models.html">Models</a></li>
+							<li><a href="configurations.html">Configuration</a></li>
+							<li><a href="security.html">Security</a></li> 
+							<li><a href="contributions.html">Contributions</a></li> 
+						</ul>
+					</div>
+				</div>
+				
+				<div class="col m12 l9 docs-content">
+					<h1>Middlewares</h1>
+					
+					<div class="content">
+						
+						<p>
+							OrganicJS suggests you to define middlewares at two levels: <code>application</code> level and <code>router</code> level. 
+						</p>
+						
+						<h2>Application Level Middlewares</h2>
+						
+						<p>
+							All your application level middlewares must be defined via <code>app.use</code> in the <code>middlewares/main.js</code>
+							file. This is the file that the framework loads while booting your application server. For ease of maintainence, you may
+							define your middlewares in the <code>middlewares/definition</code> folder and refer to them in the <code>middlewares/main.js</code>
+							file. Below is the sample contents of <code>ToDo App</code> application level middleware.
+						</p>
+						<script src="https://gist.github.com/pradeep-tiwari/0a1fa09f55130d67ec337ca20223a1c6.js"></script>
+
+						<h2>Router Level Middlewares</h2>
+
+						<p>
+							These are middlewares specific to your current route. They are defined in the <code>middlewares.js</code> file per component.
+							Following is a sample authentication middleware for <code>ToDo App</code> tasks:
+						</p>
+						<script src="https://gist.github.com/pradeep-tiwari/b7071d4b81d97e9188c1c2e4f3737d26.js"></script>
+
+					</div>
+				</div>
+			</div>
+		</body>
+	</html>
+	

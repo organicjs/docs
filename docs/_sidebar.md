@@ -1,5 +1,3 @@
-<h2>OrganicJS</h2>
-
 - Reference
 
   - [Introduction](introduction.md)
